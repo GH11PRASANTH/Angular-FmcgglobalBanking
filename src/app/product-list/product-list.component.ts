@@ -16,5 +16,13 @@ export class ProductListComponent {
   {
     window.alert("The Product is add to cart!")
   }
+  onNotify()
+  {
+    alert('You will be notified on the product goes on sale')
+  }
+  start()
+  {
+    alert("your fmcgglobal product started....")
+  }
   }
 

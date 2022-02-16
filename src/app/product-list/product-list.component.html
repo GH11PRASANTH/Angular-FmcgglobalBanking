@@ -1,4 +1,4 @@
-<div style="background-color:yellow"></div>
+<div style="background-color:orange">
 <h3>
   Fmcgglobal Products</h3>
   <div *ngFor="let product of products">
@@ -14,4 +14,9 @@
 <button type="button" (click)="share()">share</button>
 &nbsp;
 <button type="button" (click)="buy()">buy</button>
+&nbsp;
+<button type="button" (click)="start()">start</button>
+<app-product-alter [productInside]="product" (notify)="onNotify()">
+&nbsp;
+</app-product-alter>
 </div>
