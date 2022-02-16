@@ -6,11 +6,15 @@ import { productsFromFile } from '../productsFile';
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
 })
-export class ProductListComponent implements OnInit {
+export class ProductListComponent {
 
-  constructor() { }
-  products = productsFromFile;
-  ngOnInit() {
+  share()
+  {
+    window.alert("The Product is saved!")
+  }
+  buy()
+  {
+    window.alert("The Product is add to cart!")
+  }
   }
 
-}
