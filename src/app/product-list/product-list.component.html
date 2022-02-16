@@ -16,4 +16,11 @@
       <th>Available Quantity</th>
       <th>Expiry Date </th>
     </tr>
+    <tr *ngFor="let product of products">
+    <td>{{ product.productId }}</td>
+    <td>{{ product.productName }}</td>
+    <td>{{ product.price }}</td>
+    <td>{{ product.availableQuantity }}</td>
+    <td>{{ product.expiryDate}}</td>
+  </tr>
   </table>
